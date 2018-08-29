@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>專題</title>
+	<meta http-equiv="Content-Type" content="text/html;
+charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="CSS.css">
+    
+</head>
+<body>
+<div class="wrap">
+     <div class="header">New-Generation Smart Parking Lots <sub><a href="https://hackmd.io/wjfD9ttmRmqipozqu4Uvjw"target="black">learn...more</a></sub>
+      <form name="SetParkSpace" action="" method="" style="font-size:12px">
+        <br/>選擇車輛:
+       <select class="cbg" name="Car" id="car" select_one="" style="width:117.2px;"> <option value="">請新增一輛汽車</option></select>&nbsp;&nbsp;&nbsp;左側:
+       <select class="cbg" name="leftwidth" id="leftwidth" select_one=""> <option  value="0">預設寬度</option> <option  value="-1">左側增加30cm</option> <option value="-2">左側增加60cm</option> </select>
+       &nbsp;&nbsp;&nbsp;右側:<select class="cbg" name="rightwidth" id="rightwidth" select_one=""> <option value="8">預設寬度</option> <option value="9">右側增加30cm</option> <option value="10">右側增加60cm</option> </select>
+       &nbsp;&nbsp;&nbsp;<input class="cbg" type="button" value="Submit"  onclick="changewidth2(car,leftwidth,rightwidth)">
+       &nbsp;&nbsp;&nbsp;移除車輛:
+       <select class="cbg" name="Cust" id="cust" select_one="" style="width:90.8px;"> <option value="">目前無顧客</option></select>
+       
+       <input class="cbg" type="button" value="Submit"  onclick="getout2(cust)">&nbsp;&nbsp;&nbsp;<br/><br/><div id="listview" >目前顧客: 
+      <select class="cbg" name="Gust" id="gust" select_one="" style="width:104.5px;"> <option value="">目前無顧客</option></select>
+      &nbsp;&nbsp;&nbsp;歷史紀錄:<select class="cbg" name="Hust" style="width:104.5px;" id="hust" select_one=""> <option value="">無歷史紀錄</option></select> &nbsp;&nbsp;&nbsp;<!--<input class="cbg" type="button" value="refresh"  onclick="refresh()"> -->
+     利潤:<i id="sum" >0%</i></div>
+       </form> 
+       
+     </div>
+            <div class="canvas-wrap">
+                <canvas id="canvas"></canvas>    
+            </div> 
+              <div class="footer"> <p><form name="SelectCarRace" action="" method="" style="font-size:12px">
+                <a class ="car"onClick="addRectangle(1,2,180,500)">汽車</a> 
+                <select class="cbg" name="CarRace"id="carRace"select_one="">
+                  <option value="0">小型兩廂轎車:夏利(長:360cm;寬:150cm)</option>
+                  <option value="1">小型三廂轎車:豐田Corolla(長:410cm;寬:160cm)</option>
+                  <option value="2">中型轎車:捷達(長:430cm;寬:170cm)</option>
+                  <option value="3">中大型轎車:日產Cefiro(長:460cm;寬:170cm)</option>
+                  <option value="4">大型轎車:賓士S-Class(長:480cm;寬:180cm)</option>
+                  <option value="5">中型越野車:三菱Pajero(長:450cm;寬:200cm)</option>
+                  <option value="6">中型MPV:豐田Previa(長:440cm;寬:170cm)</option>
+                  <option value="7">中型皮卡:豐田Hilux(長:470cm;寬:160cm)</option>
+                  <option value="8">日本輕自動車:奧拓(長:370cm;寬:150cm)</option>
+                  <option value="9">美國標準大型房車:林肯Towncar(長:520cm;寬:180cm)</option>
+                  <option value="10">美國標準多用途車SUV(長:500cm;寬:180cm)</option>
+                  </select>&nbsp;&nbsp;&nbsp;<input class="cbg" type="button" value="產生汽車"  onclick="addDifRaceCar(carRace)">
+              or <a class="bike" onClick="addRectangle(1,2,80,250)">重機</a> <input class="cbg" type="button" value="產生重機"  onclick="addRectangle(1,2,80,250)"></form></p></div>
+  
+        </div>
+
+
+
+<script type="text/javascript" src="JavaScript.js"></script>
+</body>
+</html>
