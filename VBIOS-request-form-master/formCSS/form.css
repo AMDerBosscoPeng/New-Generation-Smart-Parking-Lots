@@ -1,0 +1,921 @@
+﻿body,html,.form-control,.btn{
+	font-family: 'Slabo 27px', serif;
+  font-size: 15px;
+}
+.form-control{
+/*width:80%;*/
+}
+.Connector_Type_padding{
+  width: 90%;
+  margin-left: 5%;
+}
+.Source_Type_padding{
+  width: 90%;
+  margin-left: 5%;
+}
+.VBIOS_item_padding{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.row.Memory_module_detection_GPIO_pin_assignment_item_padding{
+  background-color: #8accea;
+  margin-top: 1%;
+  border-radius: 0px;
+}
+.col-md-12.Memory_module_detection_GPIO_pin_assignment_padding {
+    background-color: #8accea;
+}
+#h1_VBIOS_Request_Form{
+	text-align: center;
+
+	left: 10px;
+	top:20px;
+}
+
+.row {
+	margin-top: 1%;
+	border-radius: 	4px;
+	box-sizing: border-box;	
+}
+.container-fluid,.row{
+	background-color: #a4d9f2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+body{
+	background-color: #d6d8d8;
+}
+button{
+	width: 100px;
+	height: 50px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	background-color:#DDDDDD;
+
+	
+}
+button:active,#Button_Source_Type_remove:active,#removebutton:active,#Button_Memory_Module_Information_block_remove:active,#Button_InsertMemoryInformation:active,#Button_Memory_module_detection_GPIO_pin_assignment_remove:active,#button_remove_Connectors:active,#Button_Memory_module_detection_GPIO_pin_assignment_remove:active,#Button_Source_Type_add:active{
+
+  transform: translate(3px,4px);
+ 
+}
+select:hover{
+	/*background-color: #5abeed;*/
+  border-color: #1035ef;
+ 
+}
+
+input:hover{
+  /* background-color: #5abeed;*/
+ border-color: #1035ef;
+ 
+	
+}
+.form-control:focus {
+  border-color: #1035ef;
+  
+   
+}
+
+button:hover,#Button_Source_Type_remove:hover,#removebutton:hover,#Button_Memory_Module_Information_block_remove:hover,#Button_InsertMemoryInformation:hover,#Button_Memory_module_detection_GPIO_pin_assignment_remove:hover,#button_remove_Connectors:hover,#Button_Memory_module_detection_GPIO_pin_assignment_remove:hover,#Button_Source_Type_add:hover{
+	background-color: #5abeed;
+	-moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
+	box-shadow: 10px 10px 5px #888888;
+	color: #ffffff;
+	
+
+}
+#addbutton,#Button_Add_Connectors{
+	margin-bottom: 0;
+	width: 100px;
+	height: 50px;
+}
+#Button_Source_Type_remove{
+
+	margin-left: 10%;
+	margin-top: 1.5%;
+	margin-bottom: 1.5%;
+	background-color:#DDDDDD;
+	border-radius:4px;
+	box-sizing: border-box;
+	width: 100px;
+	height: 50px;
+}
+
+#removebutton{
+	width: 100px;
+  height: 50px;
+	margin-top: 1%;
+	
+}
+#Button_Memory_Module_Information_block_remove{
+	margin-bottom: 1.5%;
+	background-color:#DDDDDD;
+	border-radius:4px;
+	box-sizing: border-box;
+	margin-top: 0.5%;
+	width: 100px;
+	height: 50px;
+}
+
+#Button_InsertMemoryInformation{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	background-color:#DDDDDD;
+	border-radius:4px;
+	box-sizing: border-box;
+	width: 100px;
+	height: 50px;
+}
+#Button_Memory_module_detection_GPIO_pin_assignment_remove{
+	width: 100px;
+	height: 50px;
+}
+#button_remove_Connectors{
+	width: 100px;
+  height: 50px;
+
+	
+}
+#Button_Memory_module_detection_GPIO_pin_assignment_remove{
+	margin-left: 10%;
+	padding-bottom: -1.5%;
+	background-color:#DDDDDD;
+	border-radius:4px;
+	box-sizing: border-box;
+
+}
+#Button_Source_Type_add{
+	background-color:#DDDDDD;
+	width: 100px;
+	height: 50px;
+	
+}
+
+#Insert_hightLight,#Memory_module_selection_add,#Insert_Memory_Module_Information_block_add{
+	background-color: #8accea;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	
+
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+  max-width: 70%;
+  margin-left: 15%;
+}
+
+
+
+#Div_Select_Memory_module_detection_GPIO_pin_assignment{
+	background-color:#8accea;
+}
+#Select_Memory_module_detection_GPIO_pin_assignment_0,#Select_Memory_module_detection_GPIO_pin_assignment_1,#Select_Memory_module_detection_GPIO_pin_assignment_2{
+	min-width: 100px;
+}
+
+#Source_Type_header{
+	max-width: 80%;
+	background-color:#79c6ea;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  min-width: 100px;
+}
+
+#Source_Type_add{
+	width:40%;
+	height: 10%;
+	margin-left: 10%;
+	margin-top: 1%;
+	padding-bottom: -1.5%;
+	background-color:#79c6ea;
+	border-radius:4px;
+	box-sizing: border-box;
+	max-width: 40%;
+
+}
+#Button_Source_Type_add_footer{
+	
+	background-color:#a4d9f2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+
+#Connector_HDMI_Type_header,#Connector_eDP_Type_header,#Connector_DISPLAYPORT_Type_header{
+	max-width: 100%;
+	background-color:#79c6ea;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+h3,h2{
+	text-align: center;
+}
+hr{
+	margin-bottom:5%; 
+}
+
+#back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #1e1e1e;
+    color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    z-index: 100;
+    display: none;
+    text-decoration:none;
+}
+#back-top:hover{
+	background-color:#5abeed;
+  opacity: 1;
+  
+}
+#dialog_id{
+	line-height: 40px; 
+	left: 1.5%;
+	top:20px;
+	text-decoration:none;
+	color:#fff;
+	text-align: center;
+	position: fixed;
+	z-index: 100;
+    filter: alpha(opacity=50);
+    background: #1e1e1e;
+    opacity: 0.5;
+    width:75px;
+    height: 40px;
+    font-size: medium;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+cursor: pointer;
+}
+#dialog_id:hover,#General_Performance-tab:hover,#Voltage_Phase_controls-tab:hover,#Memory-tab:hover,#Connectors-tab:hover,#GPIO-tab:hover{
+	background-color:#5abeed;
+  opacity: 1;
+}
+#Result-tab:hover{
+    background: #1aa71d;
+  opacity: 1;
+
+}
+
+#General_Performance-tab{
+	line-height: 40px; 
+	left: 1.5%;
+	top:65px;
+	text-decoration:none;
+	color:#fff;
+	text-align: center;
+	position: fixed;
+	z-index: 100;
+    filter: alpha(opacity=50);
+    background: #1e1e1e;
+    opacity: 0.5;
+    width:75px;
+    height: 40px;
+    font-size: medium;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+#Voltage_Phase_controls-tab{
+	line-height: 40px; 
+	left: 1.5%;
+	top:110px;
+	text-decoration:none;
+	color:#fff;
+	text-align: center;
+	position: fixed;
+	z-index: 100;
+    filter: alpha(opacity=50);
+    background: #1e1e1e;
+    opacity: 0.5;
+    width:75px;
+    height: 40px;
+    font-size: medium;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+#Memory-tab{
+	line-height: 40px; 
+	left: 1.5%;
+	top:155px;
+	text-decoration:none;
+	color:#fff;
+	text-align: center;
+	position: fixed;
+	z-index: 100;
+    filter: alpha(opacity=50);
+    background: #1e1e1e;
+    opacity: 0.5;
+    width:75px;
+    height: 40px;
+    font-size: medium;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+#GPIO-tab{
+  line-height: 40px; 
+  left:1.5%;
+  top:200px;
+  text-decoration:none;
+  color:#fff;
+  text-align: center;
+  position: fixed;
+  z-index: 100;
+    filter: alpha(opacity=50);
+    background: #1e1e1e;
+    opacity: 0.5;
+    width:75px;
+    height: 40px;
+    font-size: medium;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+#Connectors-tab{
+	line-height: 40px; 
+	left:1.5%;
+	top:245px;
+	text-decoration:none;
+	color:#fff;
+	text-align: center;
+	position: fixed;
+	z-index: 100;
+    filter: alpha(opacity=50);
+    background: #1e1e1e;
+    opacity: 0.5;
+    width:75px;
+    height: 40px;
+    font-size: medium;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+#Result-tab{
+ 
+ line-height: 40px; 
+  right: 100px;
+  top:20px;
+  text-decoration:none;
+  color:#fff;
+  text-align: center;
+  position: fixed;
+  z-index: 100;
+  filter: alpha(opacity=50);
+  background: #000000;
+  opacity:1;
+  width:75px;
+  height: 40px;
+  font-size: medium;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+}
+#Load-tab{
+ 
+ line-height: 40px; 
+  right:5px;
+  top:20px;
+  text-decoration:none;
+  color:#fff;
+  text-align: center;
+  position: fixed;
+  z-index: 100;
+    filter: alpha(opacity=50);
+    background: #000000;
+    opacity:1;
+    width:75px;
+    height: 40px;
+    font-size: medium;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.dialog__trigger {
+  
+  
+  
+  display: block;
+  transition: all 150ms ease-out;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+.dialog__trigger:hover, .dialog__trigger:focus,  {
+  outline: 0;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  transition: all 100ms ease-in;
+  box-shadow: 0 5px 10px rgba(51, 51, 51, 0.4);
+}
+.dialog__trigger:active,  {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.dialog {
+  z-index: 100;
+  background: #f1f1f1;
+  width: 70%;
+  position: fixed;
+  left: calc(50% - 35%);
+  top: 0;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(51, 51, 51, 0.4);
+  border: 3px solid #333333;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 180ms ease-in;
+}
+@media (max-width: 600px) {
+  .dialog {
+    width: 90%;
+    left: calc(50% - 45%);
+  }
+}
+.dialog.dialog--active {
+	z-index: 100;
+
+  top: 10%;
+  visibility: visible;
+  opacity: 1;
+  transition: all 250ms ease-out;
+}
+.dialog .dialog__close {
+	z-index: 100;
+ 
+  
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  padding: 15px;
+  transition: color 150ms ease;
+}
+.dialog .dialog__close:hover {
+  color: #E74C3C;
+}
+.dialog .dialog__title {
+  font-size: 2rem;
+  font-family: 'Slabo 27px', serif;
+  font-weight: 100;
+  margin: 0;
+  padding: 0 0 15px 0;
+  border-bottom: 2px solid #333333;
+}
+.dialog .dialog__content {
+
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+.dialog  {
+  margin: 0;
+  font-size: 1rem;
+}
+#img_VBIOS_Request_Flow_Chart{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+.td_name{
+	font-weight: bold;	
+	font-size: small	;
+  min-width: 200px;
+}
+.td_name:hover{
+  background-color: #a4d9f2;
+}
+.td_value{
+	font-size: small;
+  min-width: 200px;
+  
+}
+.td_value:hover{
+  background-color: #a4d9f2;
+  
+}
+.tag_name{
+	font-weight: 	bolder;
+	background-color: #79c6ea;
+  min-width: 200px;
+
+}
+.dialog_result__close2{
+   z-index: 100;
+ text-align: center;
+    font-size: medium;
+  
+  position: absolute;
+  right: 5px;
+  top: 1px;
+  cursor: pointer;
+  padding: 5px;
+  width: 60px;
+   border: 1px solid #DDDDDD;
+   border-radius: 4px;
+   box-sizing: border-box;
+  transition: color 150ms ease;
+}
+.dialog_result__close2:hover{
+  color: #ffffff;
+  background-color: #a4d9f2;
+}
+#Save_VBIOS_Results{
+	text-decoration:none;
+	
+	text-align: center;
+    font-size: medium;
+	cursor: pointer;
+	z-index: 100;
+    position: absolute;
+    right: 135px;
+    top: 1px;
+    cursor: pointer;
+    padding: 5px;
+   border: 1px solid #DDDDDD;
+   border-radius: 4px;
+   box-sizing: border-box;
+   width: 60px;
+  transition: color 150ms ease;
+
+   
+}
+#Save_VBIOS_Results:hover {
+  color: #ffffff;
+  background-color: #a4d9f2;
+}
+.dialog_result .dialog_result__close {
+  z-index: 100;
+ text-align: center;
+    font-size: medium;
+  
+  position: absolute;
+  right: 70px;
+  top: 1px;
+  cursor: pointer;
+  padding: 5px;
+  width: 60px;
+   border: 1px solid #DDDDDD;
+   border-radius: 4px;
+   box-sizing: border-box;
+  transition: color 150ms ease;
+}
+
+.dialog_result__trigger {
+  
+  
+  
+  display: block;
+  transition: all 150ms ease-out;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+.dialog_result__trigger:hover, .dialog_result__trigger:focus,  {
+  outline: 0;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  transition: all 100ms ease-in;
+  box-shadow: 0 5px 10px rgba(51, 51, 51, 0.4);
+}
+.dialog_result__trigger:active,  {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.dialog_result {
+  z-index: 100;
+  background: #f1f1f1;
+  width: 70%;
+  position: absolute;
+  left: calc(50% - 35%);
+  top: 0;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(51, 51, 51, 0.4);
+  border: 3px solid #333333;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 180ms ease-in;
+}
+@media (max-width: 600px) {
+  .dialog_result {
+    width: 90%;
+    left: calc(50% - 45%);
+  }
+}
+.dialog_result.dialog_result--active {
+  z-index: 100;
+
+  top: 10%;
+  visibility: visible;
+  opacity: 1;
+  transition: all 250ms ease-out;
+}
+
+.dialog_result .dialog_result__close:hover {
+  color: #ffffff;
+  background-color: #a4d9f2;
+}
+.dialog_result .dialog_result__title {
+  font-size: 2rem;
+  font-family: 'Slabo 27px', serif;
+  font-weight: 100;
+  margin: 0;
+  padding: 0 0 15px 0;
+  border-bottom: 2px solid #333333;
+}
+.dialog_result .dialog_result__content {
+
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+.dialog_result  {
+  margin: 0;
+  font-size: 1rem;
+}
+.table-responsive{
+	max-height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.dialog_message__trigger {
+  
+  
+  
+  display: block;
+  transition: all 150ms ease-out;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+.dialog_message__trigger:hover, .dialog_message__trigger:focus,  {
+  outline: 0;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  transition: all 100ms ease-in;
+  box-shadow: 0 5px 10px rgba(51, 51, 51, 0.4);
+}
+.dialog_message__trigger:active,  {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.dialog_message {
+  z-index: 100;
+  background: #f1f1f1;
+width: 30%;
+  min-height: 30%;
+  position: fixed;
+  left: calc(50% - 15%);
+  top: 0;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(51, 51, 51, 0.4);
+  border: 3px solid #333333;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 180ms ease-in;
+}
+@media (max-width: 300px) {
+  .dialog_message {
+    width: 30%;
+  min-height: 30%;
+
+    left: calc(50% - 15%);
+  }
+}
+.dialog_message.dialog_message--active {
+  z-index: 100;
+  width: 30%;
+  min-height: 30%;
+  top: 20%;
+  visibility: visible;
+  opacity: 1;
+  transition: all 250ms ease-out;
+}
+.dialog_message .dialog_message__close {
+  z-index: 100;
+ 
+  
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  padding: 15px;
+  transition: color 150ms ease;
+}
+.dialog_message .dialog_message__close:hover {
+  color: #E74C3C;
+}
+.dialog_message .dialog_message__title {
+  font-size: 2rem;
+  font-family: 'Slabo 27px', serif;
+  font-weight: 100;
+  margin: 0;
+  padding: 0 0 15px 0;
+  border-bottom: 2px solid #333333;
+}
+.dialog_message .dialog_message__content {
+
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+.dialog_message  {
+  margin: 0;
+  font-size: 1rem;
+}
+#Know_close{
+  text-decoration:none;
+  
+  text-align: center;
+    font-size: medium;
+  cursor: pointer;
+  z-index: 100;
+    position: absolute;
+    right: 15px;
+    bottom:1px;
+    cursor: pointer;
+    padding: 5px;
+   border: 1px solid #DDDDDD;
+   border-radius: 4px;
+   box-sizing: border-box;
+   width: 60px;
+  transition: color 150ms ease;
+
+   
+}
+#Know_close:hover {
+  color: #ffffff;
+  background-color: #1aa71d;
+}
+
+
+
+.dialog_Load__trigger {
+  
+  
+  
+  display: block;
+  transition: all 150ms ease-out;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+.dialog_Load__trigger:hover, .dialog_Load__trigger:focus,  {
+  outline: 0;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  transition: all 100ms ease-in;
+  box-shadow: 0 5px 10px rgba(51, 51, 51, 0.4);
+}
+.dialog_Load__trigger:active,  {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.dialog_Load {
+  z-index: 100;
+  background: #f1f1f1;
+width: 30%;
+  min-height: 30%;
+  position: fixed;
+  left: calc(50% - 15%);
+  top: 0;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(51, 51, 51, 0.4);
+  border: 3px solid #333333;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 180ms ease-in;
+}
+@media (max-width: 300px) {
+  .dialog_Load {
+    width: 30%;
+  min-height: 30%;
+
+    left: calc(50% - 15%);
+  }
+}
+.dialog_Load.dialog_Load--active {
+  z-index: 100;
+  width: 30%;
+  min-height: 30%;
+  top: 20%;
+  visibility: visible;
+  opacity: 1;
+  transition: all 250ms ease-out;
+}
+.dialog_Load .dialog_Load__close {
+  z-index: 100;
+ 
+  
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  padding: 15px;
+  transition: color 150ms ease;
+}
+.dialog_Load .dialog_Load__close:hover {
+  color: #E74C3C;
+}
+.dialog_Load .dialog_Load__title {
+  font-size: 2rem;
+  font-family: 'Slabo 27px', serif;
+  font-weight: 100;
+  margin: 0;
+  padding: 0 0 15px 0;
+  border-bottom: 2px solid #333333;
+}
+.dialog_Load .dialog_Load__content {
+
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+.dialog_Load  {
+  margin: 0;
+  font-size: 1rem;
+}
+#ReLoad_button{
+  text-decoration:none;
+  
+  text-align: center;
+    font-size: medium;
+  cursor: pointer;
+  z-index: 100;
+    position: absolute;
+    right: 15px;
+    bottom:1px;
+    cursor: pointer;
+    padding: 5px;
+   border: 1px solid #DDDDDD;
+   border-radius: 4px;
+   box-sizing: border-box;
+   width: 60px;
+  transition: color 150ms ease;
+
+   
+}
+#ReLoad_button:hover {
+  color: #ffffff;
+  background-color: #1aa71d;
+}
+.hidden {
+  display: none;
+}
+
+#dropzone {
+  color: #ccc;
+  background-color: #eee;
+  width: 90%;
+  border-radius: 10px;
+  border: 3px dashed #ccc;
+  margin: 20px;
+  padding: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#dropzone:hover {
+  background-color: #ddd;
+  color: #bbb;
+  border-color: #bbb;
+}
+
+#dropzone.full {
+  background-color: #54e592;
+  color: #fff;
+  border-color: #27ae60;
+}
+
+#file {
+  display: none;
+}
